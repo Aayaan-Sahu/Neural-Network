@@ -53,7 +53,7 @@ class DenseLayer:
             cols = int(f.readline())
             for i in range(rows):
                 self.weights.append([])
-                for j in range(cols):
+                for _ in range(cols):
                     self.weights[i].append(float(f.readline()))
             self.weights = Matrix.transpose(self.weights)
 
@@ -65,6 +65,7 @@ class DenseLayer:
         @ret: none
         """
 
+        # Do a matrix multiplication with the weights to calculate the output of the dense layer
         if transpose:
             self.outputs = Matrix.matrix_multiplication(
                 inputs, Matrix.transpose(self.weights)
