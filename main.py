@@ -1,12 +1,9 @@
-# main.py TODO: git init this
+# main.py
 
-import numpy as np
 import nnfs
 from nnfs.datasets import spiral_data
 
 
-from NeuralNetwork.Vector import Vector
-from NeuralNetwork.Matrix import Matrix
 from NeuralNetwork.DenseLayer import DenseLayer
 from NeuralNetwork.ActivationReLU import ActivationReLU
 from NeuralNetwork.ActivationSoftmax import ActivationSoftmax
